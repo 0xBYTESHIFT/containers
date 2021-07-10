@@ -1,4 +1,5 @@
 # Containers
+[![C/C++ CI](https://github.com/0xBYTESHIFT/containers/actions/workflows/ccpp.yml/badge.svg?branch=master)](https://github.com/0xBYTESHIFT/containers/actions/workflows/ccpp.yml)
 
 # What is it
 Container library
