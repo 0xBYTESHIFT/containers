@@ -17,9 +17,9 @@ jobs:
       run: sudo apt update && sudo apt install -y cmake clang-9 llvm-9 bash
       
     - name: configure
-      working-directory: /home/runner/work/k_tree/k_tree
+      working-directory: /home/runner/work/containers/containers
       run: cmake . -DCMAKE_CXX_COMPILER=clang++-9 -DCMAKE_C_COMPILER=clang-9
       
     - name: run tests
-      working-directory: /home/runner/work/k_tree/k_tree
-      run: cmake --build . --config Release && ctest .
+      working-directory: /home/runner/work/containers/containers
+      run: cmake --build . --config Release --parallel && ctest .
